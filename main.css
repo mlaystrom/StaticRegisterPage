@@ -1,0 +1,96 @@
+body {
+  background-color: #74b8e6;
+  margin: 0;
+  display: flex;
+  /* this 100vw for height will pull body all the way down. takes up top to bottom */
+  height: 100vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
+    "Lucida Sans", Arial, sans-serif;
+}
+body > header {
+  /* targeting header using a child combinator (header that is directly inside the body */
+  background-color: white;
+  text-align: right;
+  /* this shorthand is for top/bottom then left/right */
+  padding: 0.75rem 0;
+  border-bottom: solid 1px dimgrey;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  /* could say width: 100vw */
+}
+
+/* created this new class so that all buttons follow same style */
+.button-style {
+  background-color: #13a0ff;
+  color: white;
+  border: solid, 1px navy;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  line-height: 1.5rem;
+}
+
+.button-style:hover {
+  background-color: white;
+  color: #74b8e6;
+  font-weight: bolder;
+  border-style: solid;
+  border-color: rgb(31, 31, 100);
+  cursor: pointer;
+  transition-timing-function: ease;
+}
+
+header > a {
+  text-decoration: none;
+  margin-right: 0.5rem;
+}
+
+.container {
+  /* margin:auto puts in middle of page due to it being a flex display on body*/
+  margin: auto;
+  /* added margin-top so not stuck under nav bar */
+  margin-top: 5rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 1.5rem;
+  background-color: white;
+  border: solid 1px rgb(31, 31, 100);
+  border-radius: 15px;
+}
+
+.container h1 {
+  /* top left/right bottom */
+  margin: 0 0 0.5rem;
+}
+
+/* targeting both of these */
+input,
+button {
+  width: 100%;
+  min-width: 300 px;
+  /* fixes the input and button widths with the border-box */
+  box-sizing: border-box;
+  /* these bottom four adds space so not bunched together */
+  margin: 0.75rem 0;
+  padding: 0.25rem 1rem;
+  line-height: 1.5 rem;
+  font-size: 1em;
+  border: solid 1px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+footer {
+  margin-top: 0.75rem;
+  border-top: solid 2px rgba(0, 0, 0, 0.2);
+  padding: 1.25rem;
+  text-align: center;
+}
+
+footer > img {
+  margin: 0 0.5rem;
+}
+
+footer > img:hover {
+  cursor: pointer;
+}
